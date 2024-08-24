@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atellier Strawberry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="teste">
+                <li><a href="#">Buquês de Borboletas</a></li>
+                <li><a href="#">Luminárias</a></li>
+                <li><a href="#">Potes Decorados</a></li>
+                <li><a href="#">Topos de Cuia</a></li>
+            </ul>
+            <ul class="dropdown-menu">
+                <li><a href="#">Xícaras</a></li>
+                <li><a href="#">Buquê de Borboletas</a></li>
+                <li><a href="#">Topos de Cuia</a></li>
+                <li><a href="#">Chaveiros</a></li>
+                <li><a href="#">Copos</a></li>
+                <li><a href="#">Potes Decorados</a></li>
+                <li><a href="#">Caixinhas</a></li>
+                <li><a href="#">Luminárias</a></li>
+                <li><a href="#">Cestas</a></li>
+                <li><a href="#">Flores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-carousel">
+            <div class="carousel">
+                <div class="carousel-item"><img src="imagens/torre.jpg" alt="Produto 1"></div>
+                <div class="carousel-item"><img src="imagens/natureza.jpg" alt="Produto 2"></div>
+                <div class="carousel-item"><img src="imagens/por-do-sol.jpg" alt="Produto 3"></div>
+            </div>
+            <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+        </section>
+        <h1>DESTAQUES</h1>
+        <section class="gallery">
+            <div class="gallery-item">
+              <img src="imagens/buquerosapequeno.jpg" alt="Item 1" onclick="openModal('imagens/buquerosapequeno.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 2" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 3" onclick="openModal('imagens/luminaria.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 4" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/cesta.jpg" alt="Item 5" onclick="openModal('imagens/cesta.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/cesta.jpg" alt="Item 6" onclick="openModal('imagens/cesta.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/cesta.jpg" alt="Item 7" onclick="openModal('imagens/cesta.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 8" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 9" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 10" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 11" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 12" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 13" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 14" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 15" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 16" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 17" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+            <div class="gallery-item">
+              <img src="imagens/caixinhadecoelho.jpg" alt="Item 18" onclick="openModal('imagens/caixinhadecoelho.jpg')"><p class="nome-do-item">Buquê de Borboletas Rosas<span class="cor-valor"><br>R$ 99,99</br></span></p>
+            </div>
+        </section>
+    </main>
+    <div>
+      <h4>Categorias</h4>
+      </div>
+    <div class="categorias">
+      <ul>
+      <li>Xícaras</li>
+      <li>Buquês de Borboletas</li>
+      <li>Cestas</li>
+      <li>Topos de Cuia</li>
+      <li>Chaveiros</li>
+    </ul>
+    <ul>
+      <li>Potes Decorados</li>
+      <li>Caixinhas</li>
+      <li>Luminárias</li>
+      <li>Flores</li>
+      <li>Copos</li>
+    </ul>
+    </div>
+    <div class="sobre-loja">
+      <ul>
+        <h3>
+          SOBRE A STRABERRY ATELLIER
+          </h3>
+      <li>Sobre Nós</li>
+      <li>Ofertas</li>
+    </ul>
+    <ul>
+      <h3>
+        SIGA-NOS
+      </h3>
+      <li>Instagram</li>
+      <li>Facebook</li>
+      <li>Tik Tok</li>
+    </ul>
+    </div>
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
